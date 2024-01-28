@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Snow Alert</string>
+    <string name="snow_alert_high_notification_channel_id">snow_alert_high</string>
+    <string name="title_activity_lock_screen">LockScreenActivity</string>
+</resources>
