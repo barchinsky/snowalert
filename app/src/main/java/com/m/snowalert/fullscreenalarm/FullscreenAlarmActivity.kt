@@ -1,4 +1,4 @@
-package com.m.snowalert.lockscreen
+package com.m.snowalert.fullscreenalarm
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
