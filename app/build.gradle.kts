@@ -2,16 +2,17 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
     id("kotlin-parcelize")
 }
 
 android {
-    namespace = "com.example.snowalert"
+    namespace = "com.m.snowalert"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.snowalert"
+        applicationId = "com.m.snowalert"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
@@ -87,6 +88,11 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0-RC2")
+
+    // Moshi
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
+
+    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

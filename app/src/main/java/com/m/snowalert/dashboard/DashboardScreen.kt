@@ -123,7 +123,7 @@ fun DashboardScreen(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Text("Notify at")
-                Text(dashboardState.alertInfo.notifyAt)
+                Text(dashboardState.alertInfo.nextAlertTimestamp.toString())
             }
             Spacer(modifier = Modifier.height(16.dp))
             Row(
@@ -132,7 +132,7 @@ fun DashboardScreen(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Text("Next alert in")
-                Text(dashboardState.alertInfo.nextAlertInMinutes.toString())
+                Text(dashboardState.alertInfo.nextAlertTimestamp.toString())
             }
             Spacer(modifier = Modifier.height(16.dp))
             Row(

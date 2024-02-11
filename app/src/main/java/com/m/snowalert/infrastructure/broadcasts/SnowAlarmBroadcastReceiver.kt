@@ -7,9 +7,9 @@ import android.content.Context
 import android.content.Intent
 import androidx.core.app.NotificationCompat
 import androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver
-import com.m.snowalert.MainActivity
 import com.m.snowalert.R
-import com.m.snowalert.lockscreen.FullscreenAlarmActivity
+import com.m.snowalert.MainActivity
+import com.m.snowalert.fullscreenalarm.FullscreenAlarmActivity
 import java.util.Calendar
 
 @SuppressLint("RestrictedApi")

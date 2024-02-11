@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import com.m.snowalert.dashboard.model.AlertInfo
+import com.m.snowalert.infrastructure.alert.AlertInfo
 import com.m.snowalert.infrastructure.workManager.worker.FetchForecastWorker
 import com.m.snowalert.infrastructure.workManager.worker.FetchForecastWorker.Companion.TAG_FETCH_FORECAST_WORKER
 import dagger.hilt.android.qualifiers.ApplicationContext
