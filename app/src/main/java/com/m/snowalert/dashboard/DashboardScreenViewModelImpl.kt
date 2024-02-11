@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class DashboardScreenViewModelImpl @Inject constructor(
+internal class DashboardScreenViewModelImpl @Inject constructor(
     private val enableSnowAlertUseCase: EnableSnowAlertUseCase,
     private val disableSnowAlertUseCase: DisableSnowAlertUseCase,
 ) : DashboardScreenViewModel, ViewModel() {

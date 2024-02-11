@@ -1,5 +1,9 @@
 package com.m.snowalert.dashboard.model
 
+import com.m.snowalert.infrastructure.alert.AlertDuration
+import com.m.snowalert.infrastructure.alert.AlertInfo
+import com.m.snowalert.infrastructure.alert.RepeatInterval
+
 data class DashboardScreenState(
     val address: String = "Unknown",
     val forecastInfo: ForecastInfo = ForecastInfo(
@@ -9,11 +13,10 @@ data class DashboardScreenState(
         temperature = "- C"
     ),
     val alertInfo: AlertInfo = AlertInfo(
+        id = 0,
         enabled = false,
-        firstAlertDay = 0,
-        notifyAt = "7:00",
-        nextAlertInMinutes = 0,
-        repeatInterval = AlertInfo.RepeatInterval.BIWEEKLY,
-        alertWatchdogDuration = AlertInfo.AlertDuration.WEEK,
+        nextAlertTimestamp = 0,
+        repeatInterval = RepeatInterval.BIWEEKLY,
+        alertWatchdogDuration = AlertDuration.WEEK,
     )
 )
